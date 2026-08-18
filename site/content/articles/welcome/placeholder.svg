@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#EEE9DC"/>
+  <path d="M0 520 C 200 460, 350 560, 550 500 C 750 440, 850 540, 1200 470 L1200 750 L0 750 Z" fill="#5B6B4F" opacity="0.55"/>
+  <path d="M0 580 C 250 540, 400 610, 620 560 C 820 515, 950 590, 1200 545 L1200 750 L0 750 Z" fill="#3C5A66" opacity="0.4"/>
+  <circle cx="960" cy="180" r="46" fill="#C98A2E"/>
+  <text x="50%" y="90" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="18" fill="#4B5245">replace this file with a real photo</text>
+</svg>

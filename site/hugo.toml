@@ -1,0 +1,27 @@
+baseURL = "https://magicsun.example.com/"
+languageCode = "en-us"
+title = "Magic Sun"
+pagination.pagerSize = 20
+
+[params]
+  author = "Magic Sun"
+  tagline = "Landscape Designer & Urban Strategist"
+  email = "magicsun961@gmail.com"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[menu.main]]
+  name = "Bio"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Articles"
+  url = "/articles/"
+  weight = 2
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 3

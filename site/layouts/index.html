@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="bio">
+  <p class="eyebrow">Bio</p>
+  <div class="bio-body">
+    {{ .Content }}
+  </div>
+</section>
+
+{{ $articles := where site.RegularPages "Section" "articles" }}
+{{ if $articles }}
+<hr class="contour-rule">
+<section class="recent">
+  <p class="eyebrow">Recent writing</p>
+  <ul class="article-teaser-list">
+    {{ range first 3 $articles }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <span class="teaser-title">{{ .Title }}</span>
+        <time class="teaser-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  <a class="all-articles" href="{{ "/articles/" | relURL }}">All articles →</a>
+</section>
+{{ end }}
+{{ end }}

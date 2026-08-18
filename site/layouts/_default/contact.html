@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="contact">
+  <p class="eyebrow">Contact</p>
+  <div class="contact-body">
+    {{ .Content }}
+  </div>
+  <a class="email-link" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+</section>
+{{ end }}
